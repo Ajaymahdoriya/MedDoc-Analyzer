@@ -35,7 +35,7 @@ function App() {
     formData.append('document', file)
 
     try {
-      const response = await fetch('http://localhost:3000/api/analyze-bill', {
+      const response = await fetch('meddoc-analyzer-backend.onrender.com/api/analyze-bill', {
         method: 'POST',
         body: formData,
       })
